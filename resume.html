@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM.dev Works - Resume</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <a href="./index.html" class="logo"><strong>KM.Dev</strong> Works</a>
+                <ul class="nav-list">
+                  <li class="nav-list__item"><a href="./index.html" class="nav-list__link" id="nav-projects">Projects</a></li>
+                  <li class="nav-list__item"><a href="./resume.html" class="nav-list__link nav-list__link--active" id="nav-resume">Resume</a></li>
+                    <li class="nav-list__item">
+                      <div class="lang-dropdown">
+                    <button class="lang-btn">
+                        <img id="selected-flag" src="img/icons/gb.png" alt="English" class="flag-icon">
+                        <span id="selected-lang">English</span>
+                        <span class="arrow-down">▼</span>
+                    </button>
+                    <ul class="lang-menu" id="lang-menu">
+                        <li onclick="changeLanguage('en', 'img/icons/gb.png', 'English')">
+                            <img src="img/icons/gb.png" alt="English" class="flag-icon"> English
+                        </li>
+                        <li onclick="changeLanguage('ee', 'img/icons/ee.png', 'Eesti')">
+                            <img src="img/icons/ee.png" alt="Eesti" class="flag-icon"> Eesti
+                        </li>
+                        <li onclick="changeLanguage('ru', 'img/icons/ru.png', 'Русский')">
+                            <img src="img/icons/ru.png" alt="Русский" class="flag-icon"> Русский
+                        </li>
+                    </ul>
+                  </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header__wrapper">
+            <img src="img/avatar.jpg" alt="Konstantin" class="header__avatar">
+
+            <div class="header__content">
+                <p class="header__greeting" id="header-greeting">Welcome!</p>
+                <h1 class="header__title" id="header-title">I’m Konstantin,</h1>
+                <p class="header__subtitle" id="header-subtitle">and I create digital experiences!</p>
+
+                <div class="header__socials">
+                    <a href="https://www.linkedin.com/in/konstantin-mishin-webdev/" class="header__social-link">
+                        <img src="./img/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/OaF131" class="header__social-link">
+                        <img src="./img/icons/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.behance.net/konstantin_webdev" class="header__social-link">
+                        <img src="./img/icons/behance.svg" alt="Behance">
+                    </a>
+                    <a href="mailto:konstantin.webdev.01@gmail.com" class="header__social-link">
+                        <img src="./img/icons/email.svg" alt="Email">
+                    </a>
+                </div>
+
+                <a href="Konstantin_Mishin_CV.pdf" class="btn btn-outline" download id="download-cv">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="section">
+    <div class="container resume-container">
+        <!-- Блок "Обо мне" -->
+        <section class="resume-section">
+            <h1 class="title-1" id="resume-title">Resume</h1>
+            <h2 class="title-2" id="about-title">About Me</h2>
+            <p id="about-text">
+                I am a highly motivated third-year student at
+                <strong class="highlight-text">Estonian Entrepreneurship University of Applied Sciences (EEK Mainor)</strong>,
+                pursuing a Bachelor's degree in Web Technologies.
+                Passionate about web development and related fields,
+                I am open to opportunities that provide practical experience and professional growth!
+            </p>
+        </section>
+
+        <!-- Блок "Образование" -->
+        <section class="resume-section">
+            <h2 class="title-2" id="education-title">Education</h2>
+            <p class="education-item">
+                <strong class="highlight-text">Estonian Entrepreneurship University of Applied Sciences (EEK Mainor)</strong>
+            </p>
+            <p id="education-text">Bachelor’s Degree in Web Technologies (In Progress, 2022 - Present)</p>
+        </section>
+
+        <!-- Блок "Навыки" -->
+        <section class="resume-section">
+            <h2 class="title-2" id="skills-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title" id="frontend-title">Frontend Development</h3>
+                    <p id="frontend-text">HTML, CSS, Bootstrap, JavaScript, ReactJS, TailwindCSS, StyledComponents.</p>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title" id="backend-title">Backend Development</h3>
+                    <p id="backend-text">PHP, Node.js Python, C#.</p>
+                </div>
+                <div class="skill-category">
+                  <h3 class="skill-title" id="crossplatform-title">Cross-Platform Development</h3>
+                  <p id="crossplatform-text">Flutter (Dart)</p>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title" id="database-title">Database Management</h3>
+                    <p id="database-text">Oracle, MySQL, Firebase.</p>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-title" id="design-title">UI/UX Design</h3>
+                    <p id="design-text">User Research, Prototyping, Wireframing (Figma, Adobe XD), Responsive Design.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок "Контакты" -->
+        <section class="resume-section">
+            <h2 class="title-2" id="contact-title">Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:konstantin.webdev.01@gmail.com" id="email-text">konstantin.webdev.01@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/konstantin-mishin-webdev" id="linkedin-text">linkedin.com/in/konstantin-mishin-webdev</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/OaF131" id="github-text">github.com/OaF131</a></p>
+            <p><strong>Behance:</strong> <a href="https://www.behance.net/konstantin_webdev" id="behance-text">behance.net/konstantin_webdev</a></p>
+        </section>
+    </div>
+</main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul class="social">
+                  <li class="social__item"><a href="https://www.linkedin.com/in/konstantin-mishin-webdev"><img src="./img/icons/linkedin.svg" alt="Link"></a></li>
+                  <li class="social__item"><a href="https://github.com/OaF131"><img src="./img/icons/gitHub.svg" alt="Link"></a></li>
+                  <li class="social__item"><a href="https://www.behance.net/konstantin_webdev"><img src="./img/icons/behance.svg" alt="Link"></a></li>
+                  <li class="social__item"><a href="mailto:konstantin.webdev.01@gmail.com"><img src="./img/icons/email.svg" alt="Link"></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2025 konstantin-mishin.dev</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
