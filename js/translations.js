@@ -47,7 +47,7 @@ const translations = {
         "header-greeting": "Добро пожаловать!",
         "header-title": "Я Константин,",
         "header-subtitle": "и я создаю цифровые проекты!",
-        "download-cv": "Скачать резюме",
+        "download-cv": "Скачать CV",
         "latest-projects": "Последние проекты",
         "resume-title": "Резюме",
         "about-title": "Обо мне",
